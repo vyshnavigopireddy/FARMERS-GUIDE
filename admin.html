@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width-device-width,initial-scale=1.0">
+<title>Admin Login Panel</title>
+
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E8EDF2;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 50px 50px -50px darkslategray;
+}
+
+.myform {
+    width: 270px;
+    margin-right: 20px; /* Reduce the margin */
+}
+
+.myform h2 {
+    color: #1c1c1e;
+    margin-bottom: 20px;
+}
+
+.myform input {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    width: 85%;
+    border-bottom: 2px solid #1c1c1e;
+    margin-bottom: 25px;
+    padding: 7px 0;
+    font-size: 14px;
+}
+
+.myform button {
+    color: white;
+    background-color: #1c1c1e;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 5px 12px;
+    font-weight: 500;
+}
+
+.image img {
+    width: 300px;
+}
+</style>
+
+<script>
+function verif() {
+    var adm = document.getElementById("adminName").value;
+    var pas = document.getElementById("password").value;
+    if (adm !== "vyshnavi" || pas !== "vyshu@2004") {
+        alert("Invalid admin name or password");
+    } else {
+                window.location.href = "adm.jsp";
+    }
+}
+</script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="myform">
+        <form onsubmit="verif(); return false;">
+            <h2>ADMIN LOGIN</h2>
+            <input type="text" id="adminName" placeholder="Admin Name">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit" onclick="verif()">Login</button>
+        </form>
+    </div>
+    <div class="image">
+        <img src="image.jpg" width="300px">
+    </div>
+</div>
+
+</body>
+</html>

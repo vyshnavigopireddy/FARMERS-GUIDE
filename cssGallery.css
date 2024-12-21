@@ -1,0 +1,82 @@
+<style>
+body {
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfX3nAbt6u_ie6THheN8Rzd3DO1p-PGhFbwA&usqp=CAU'); 
+background-size: cover;
+text-align: center;
+margin: 0;
+padding: 0;
+background-attachment: fixed;
+}
+h1 {
+color: #333;
+}
+header {
+background-color: #66CDAA;
+color: #fff;
+font-family:"Apple Chancery", cursive;
+padding: 20px 0;
+}
+
+.shop-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+padding: 20px;
+}
+
+.machine-card {
+background-color: #fff;
+border: 1px solid #ddd;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+width: 300px;
+margin: 20px;
+padding: 20px;
+text-align: center;
+}
+
+img {
+max-width: 100%;
+}
+
+.price {
+font-weight: bold;
+color: #007BFF;
+}
+
+button {
+background-color: #007BFF;
+color: #fff;
+border: none;
+border-radius: 3px;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+/* Navigation bar styles */
+ul.navbar {
+list-style-type: none;
+margin: 0;
+padding: 0;
+background-color: #333;
+overflow: hidden;
+}
+
+li.nav-item {
+float: right;
+}
+
+li.nav-item a {
+display: block;
+color: #fff;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li.nav-item a:hover {
+background-color: #007BFF;
+}
+</style>

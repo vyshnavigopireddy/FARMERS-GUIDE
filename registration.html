@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>register form</title>
+<script>
+function verif()
+{
+ var pas=document.getElementById("password").value;
+ var conpas=document.getElementById("confirmpassword").value;
+ if(pas!=conpas)
+{
+   alert("passwords incorrect");
+}
+ if(pas=='')
+{
+   alert("please fill all details");
+}
+if(pas==conpas &&pas!=conpas)
+ {
+   alert("registration successful");
+  }
+
+}
+</script>
+
+<style>
+form
+{
+display:grid;
+grid-gap:5px;
+}
+body
+{
+ margin: 0;
+ padding:0;
+ background: url(https://wallpapercave.com/wp/wp1886331.jpg);
+ background-repeat:no-repeat;
+ background-size:cover;
+ background-position: center;
+    font-family: sans-serif;
+}
+h1 {
+      margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.main
+{
+  width: 320px;
+    height: 500px;
+    background: #000;
+    color: #fff;
+    top: 65%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing:content-box;
+   padding: 70px 30px ; 
+
+}
+label
+ {    
+      color:white;
+      font-weight: bold;
+ }
+input
+ {
+      width: 100%;
+
+      padding: 5px;
+      box-sizing: border-box;
+    color:black;
+   
+    }
+.button
+{
+ border: none;
+    outline: none;
+    height: 40px;
+    background: #98FF98;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.button:hover
+ {
+      background-color: aqua;
+    }
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+</style>
+</head>
+<body>
+<div class="main">
+<img src="https://coffeelogin.netlify.app/assets/person.jpg" class="avatar" alt="img">
+
+<form action="registration" method="POST">
+<h1 align="center">Register</h1>   
+<label for="username">Username:</label>
+<input  type="text" id="name" name="name" placeholder="Enter your username" pattern="^[A-Z][a-zA-Z0-9]*{10}"  required><br>
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email" placeholder="Example@gmail.com" required>
+<label for="phonenumber">Phone Number:</label>
+<input  type="text" id="phonenumber" name="phonenumber" placeholder="Enter your phone number" pattern="[0-9]{10}" required ><br>
+<label for="password">Password:</label>
+<input  type="password" id="password" name="password" placeholder="enter your password" pattern="[a-zA-Z0-9]*{7}"  required><br>
+<label for="confirmpassword"> Confirm Password:</label>
+<input  type="password" id="confirmpassword" name="confirmpassword" placeholder="confirm your password"  required>
+<label for="gender">Gender:</label>
+<input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="feMale">female
+<input type="radio" name="gender" value="others">others
+
+<input  type="submit" value="Regsiter" class="button" onclick="verif()" >
+
+</form>
+</div>
+</body>
+</html>

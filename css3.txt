@@ -1,0 +1,246 @@
+<html>
+	<head>
+		<style>
+            *
+            {
+                padding: 0;
+                margin: 0;
+                box-sizing:border-box ;
+            }
+			body{
+                background-image:url('h5.jpg');
+                background-size: cover;
+                background-position: center;
+                text-align:center;
+                overflow-x: hidden ;
+            }
+            .t1
+            {
+                background-image:url('h2.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius:50px;
+               
+                
+            }
+            @keyframes v
+	{
+ 
+	 0%{
+		 background-color: blueviolet;
+		 border-color: rgb(223, 219, 226) greenyellow blue red;
+ 
+	 }
+	 25%
+	 {
+		 background-color: rgb(226, 134, 43);
+		 border-color: red rgb(230, 225, 225) greenyellow blue;
+ 
+	 }
+	 75%
+	 {
+		 
+		 background-color: rgb(46, 226, 43);
+		 border-color: rgb(13, 13, 186) red rgb(229, 232, 225)greenyellow;
+ 
+		 
+	 }
+	 100%
+	 {
+		 
+		 background-color: rgb(226, 43, 49);
+		 border-color: greenyellow rgb(8, 0, 255) red rgb(224, 224, 228);
+ 
+	 }
+ }
+            .t1:hover
+            {
+            cursor:pointer;
+            }
+            .t1 ul{
+                display:inline-flex;
+                list-style:none;
+                color:beige;
+                border-style: groove;
+
+            }
+            .t1 ul li{
+                width:350px;
+                margin:15px;
+                padding:20px;
+                font-style: italic bold;
+                font-size-adjust:initial;
+                cursor:pointer;
+            }
+            .t1 ul li a
+            {
+                text-decoration: none;
+                color:rgb(186, 177, 196);
+            } 
+            .t ul li a{
+                color:black;
+            }
+
+          .s
+            {
+                display:none;
+                animation-name:v;
+
+            }
+            .t1 ul li:hover .s
+            {
+                display: block;
+                position: absolute;
+                border-radius:25px;
+                background:rgb(205, 15, 15);
+                margin-top: 7px;
+                margin-left:-10px;
+            }
+            .t1 ul li:hover .s ul{
+                display: block;
+                margin:10px;
+                border-style: groove;
+
+            }
+            a{
+                border-style:inset;
+                border-color:rgb(223, 132, 12);
+                width: auto;
+                font-size:18px;
+                border-radius: 20px;
+                animation-name:v;
+	animation-duration:2s;
+	animation-delay:1s;
+	animation-iteration-count: infinite;
+
+            }
+            h1:hover{
+                background-color: black;
+                animation-name:s;
+	animation-duration:4s;
+	animation-delay:1s;
+	animation-iteration-count: infinite;
+
+            }
+            @keyframes s
+   {
+
+	0%{
+		background-color: rgb(231, 235, 225) rgb(8, 0, 255) red rgb(224, 224, 228);
+
+	}
+	25%
+	{
+		background-color: rgb(13, 13, 186) red rgb(229, 232, 225)greenyellow;
+
+	}
+	75%
+	{
+		
+		background-color: red rgb(230, 225, 225) rgb(47, 255, 134) blue;
+
+	
+	}
+	100%
+	{
+        
+		
+		background-color:rgb(223, 219, 226) rgb(236, 239, 231) blue red;
+
+	}
+   }
+            a:hover
+            {
+                font-size:25px;
+                border-radius:30px;
+            }
+            .t1 ul li:hover .s ul li{
+                width:150px;
+                padding:6px;
+                text-align: center;
+            }
+            h1{
+                font-size: 50px;
+                color: chartreuse;
+            }
+            footer{
+    text-align:right;
+}
+.f
+{
+    margin-left: 1400px;
+}
+h2{
+    margin-left: 1300px;
+    color: rgb(42, 165, 81);
+    text-decoration:underline;
+}
+footer
+{
+    color: black;
+    background-color: aquamarine;
+    margin-top: 40%;
+    padding:30px;
+    text-align: center;
+}
+.s ul li: hover
+{
+    color:red;
+
+}
+		</style>
+	</head>
+		<body>
+			
+			<h1><center><u>WELCOME TO SCHOOL DATASET</u></center> </h1>
+        
+            <h2>YEAR:</h2>
+            <select class="f">
+                <option>.....select...</option>
+                <option>2014</option>  <option>2015</option>  <option>2016</option>  <option>2017</option>  <option>2018</option>
+                <option>2019</option>  <option>2018</option>  <option>2019</option>  <option>2020</option>  <option>2021</option>
+                <option>2022</option>  <option>2023</option>  <option>2024</option>  <option>2025</option>  <option>2026</option>
+            </select>
+        <div class="t1">
+			<ul>
+				<li class="p"><a href=regpr.html>PRINCIPAL DETAILS</a></li>
+				<li><a href="#">STAFF DETAILS</a>    
+                <div class="s">
+                    <ul>
+
+                        <li><a href=staff.html>TEACHING</a></li>
+                        <li><a href="staff.html">NON-TEACH</a></li>
+                    </ul>
+                </div>
+            </li>
+				<li><a href="#">STUDENTS DETAILS</a>
+                    <div class="s">
+                        <ul>
+                            <H5>PRIMARY SECTIONS</H5>
+                            <li><a href=student.html>NURSERY</a></li>
+                            <li><a href=student.html>LKG</a></li>
+                            <li><a href=student.html>UKG</a></li>
+                            <li><a href=student.html>1 CLASS</a></li>
+                            <li><a href=student.html>2 CLASS</a></li>
+                            <li><a href=student.html>3 CLASS</a></li>
+                            <li><a href=student.html>4 CLASS</a></li>
+                            <li><a href=student.html>5 CLASS</a></li>
+                            <H4>HIGHER SECTION S</H4>
+                            <li><a href=student.html>6 CLASS</a></li>
+                            <li><a href=student.html>7 CLASS</a></li><li><a href=student.html>8 CLASS</a></li><li><a href=student.html>9 CLASS</a></li><li><a href=student.html>FINAL 10 CLASS</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">WORKERS DETAILS</a>
+                    <div class="s">
+                        <ul>
+    
+                            <li><a href=van.html>VAN DRIVERS </a></li>
+                            <li><a href=sweeper.html>SWEEPERS</a></li>
+                        </ul>
+                    </div></li>
+                </ul>
+				</div>
+                <footer>&copy;Copyright School dataset</footer>
+	</body>
+</html>

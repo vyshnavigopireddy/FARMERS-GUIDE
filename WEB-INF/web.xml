@@ -1,0 +1,79 @@
+<web-app>
+<servlet>
+    <servlet-name>First</servlet-name>
+    <servlet-class>login2</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>First</servlet-name>
+    <url-pattern>/validate2</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>Second</servlet-name>
+    <servlet-class>valid2</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Second</servlet-name>
+    <url-pattern>/valid</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>Third</servlet-name>
+    <servlet-class>registration</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Third</servlet-name>
+    <url-pattern>/registration</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>Fourth</servlet-name>
+    <servlet-class>name</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Fourth</servlet-name>
+    <url-pattern>/name</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>Fifth</servlet-name>
+    <servlet-class>ages</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Fifth</servlet-name>
+    <url-pattern>/age</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>Sixth</servlet-name>
+    <servlet-class>finall</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Sixth</servlet-name>
+    <url-pattern>/finall</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>Seventh</servlet-name>
+    <servlet-class>contact</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Seventh</servlet-name>
+    <url-pattern>/contact</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>Eigth</servlet-name>
+    <servlet-class>feedback</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Eigth</servlet-name>
+    <url-pattern>/feedback</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>Ninth</servlet-name>
+    <servlet-class>login</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Ninth</servlet-name>
+    <url-pattern>/validate3</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+</web-app>

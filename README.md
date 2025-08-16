@@ -1,4 +1,3 @@
-Farmers Guide
 Farmers Guide is a web-based application designed to assist farmers with crop-related information, user authentication, feedback collection, and administrative tasks. Built with HTML5, CSS3, JavaScript, Java Servlets, JSP (JavaServer Pages), and MySQL (via JDBC), it provides a responsive platform for agricultural support. The project is hosted on GitHub at vyshnavigopireddy/FARMERS-GUIDE.
 Features
 
@@ -105,4 +104,5 @@ Integrate APIs for real-time data if needed.
 
 License
 MIT License.﻿# FARMERS-GUIDE
+
 
